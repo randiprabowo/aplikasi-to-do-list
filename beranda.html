@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <h2 id="userName">Nama Pengguna</h2>
+            <p id="userJob">Jabatan</p>
+        </div>
+
+        <!-- Time Section -->
+        <div class="time">
+            <h3 id="currentTime"></h3>
+        </div>
+
+        <!-- To-Do List Input Section -->
+        <div class="input-section">
+            <textarea id="taskInput" placeholder="Tulis tugas Anda di sini..."></textarea>
+            <select id="priorityLevel">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="addTaskBtn">Tambah Tugas</button>
+        </div>
+
+        <!-- To-Do and Done List Section -->
+        <div class="list-section">
+            <div class="todo-list">
+                <h3>To-Do List</h3>
+                <ul id="todoItems"></ul>
+            </div>
+            <div class="done-list">
+                <h3>Done</h3>
+                <ul id="doneItems"></ul>
+            </div>
+        </div>
+
+        <!-- Delete Button -->
+        <button id="deleteAllBtn">Hapus Semua Tugas</button>
+    </div>
+
+    <script src="Fungsionalnya.js"></script>
+</body>
+</html>
